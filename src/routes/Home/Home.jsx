@@ -1,24 +1,24 @@
-import Cabecalho from "../../components/Cabecalho";
-import { Link, useNavigate } from "react-router-dom";
+
+import Error404 from "../Error404/Error404"
 
 
 export default function Home() {
 
-  const navigate = useNavigate();
 
-  const handleLogout = () => {
 
-    sessionStorage.removeItem("token-usuario")
-    sessionStorage.removeItem("data-usuario")
-
-    navigate('/')
+  if (sessionStorage.getItem("token-usuario")){
+    return (
+      <div className="divHome">
+        <main>
+          <h1>Home</h1>
+        </main>
+      </div>
+    )
   }
-
-  return (
-    <div>
-        <Cabecalho/>
-        <h1>Home</h1>
-        <Link onClick={handleLogout}>Logout</Link>
-    </div>
+  
+  return(
+    <>
+      <Error404/>
+    </>
   )
 }

@@ -1,0 +1,105 @@
+:root {
+    --blue : #12d2db;
+    --white : #fcf2fa;
+    --green : rgba(23, 99, 48, 0.667);
+    --purple-blc : #230622dd;
+    --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor : linear-gradient(to right, rgba(3, 138, 69, 0.6)5%, rgba(14, 92, 52, 0.9));
+  }
+  
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  div{
+
+      nav {
+        position: absolute;
+        background: var(--navColor);
+        box-shadow: var(--shadow);
+        height: 80px;
+        width: 100%;
+
+        #check {
+            display: none;
+        }
+
+
+        label.checkbtn {
+          line-height: 80px;
+          font-size: 30px;
+          float: right;
+          cursor: pointer;
+          margin-right: 40px;
+          display: none;
+
+          & i {
+            color: var(--white);
+            padding: 5px;
+            border-radius: 10px;
+            transition: .5s ease;
+
+            &:hover {
+                background: var(--green);
+            }
+          }
+        }
+
+        label.logo {
+          color: var(--white);
+          font-size: 30px;
+          line-height: 80px;
+          padding: 0 80px;
+          letter-spacing: -1px;
+          font-weight: 800;
+          font-style: italic;
+          transition: .2s ease;
+          text-shadow: 3px 5px 20px #230622aa;
+        }
+
+
+        & ul {
+          float: right;
+          margin-right: 80px;
+
+
+
+          & li {
+            display: inline-block;
+            line-height: 80px;
+
+            & a {
+              color: var(--white);
+              font-size: 17px;
+              padding: 7px 13px;
+              border-radius: 13px;
+              text-transform: lowercase;
+
+
+              &.active, &:hover {
+                background: var(--green);
+                transition: .5s;
+              }
+            }
+          }
+        }
+      }
+
+
+  }
+  
+  
+  
+  section {
+    height: 100vh;
+    background: url(/img/background-dark.gif) no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  
+  
+ 

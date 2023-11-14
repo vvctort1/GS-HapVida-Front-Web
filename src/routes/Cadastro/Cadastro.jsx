@@ -1,16 +1,18 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react";
 
 export default function Cadastro() {
 
   const navigate = useNavigate();
 
+  
   const [usuario,setUsuario] = useState({
     nome: "",
     email: "",
-    senha: ""
+    senha: "",
+    foto: ""
   });
-
+  
   const handleChange = (e) => {
     const { name,value } = e.target;
 
@@ -45,11 +47,14 @@ export default function Cadastro() {
         <h1>Cadastro</h1>
 
         <form onSubmit={() => handlePost(usuario)}>
-            <input type="text" name="nome" placeholder="Digite seu nome" value={usuario.nome} onChange={handleChange}/>
-            <input type="email" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
-            <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
-            <input type="submit" value="Cadastrar"/>
+          <input type="text" name="nome" placeholder="Digite seu nome" value={usuario.nome} onChange={handleChange}/>
+          <input type="email" name="email" placeholder="Digite seu email" value={usuario.email.trim()} onChange={handleChange}/>
+          <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha.trim()} onChange={handleChange}/>
+
+          <input type="submit" value="Cadastrar"/>
         </form>
+
+        <p>Já possui conta? <Link to={'/'}>Logar</Link></p>
     </div>
   )
 }

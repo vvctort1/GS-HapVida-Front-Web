@@ -50,6 +50,11 @@ export default function Login() {
 
     }
 
+    if (usuario.email === "" && usuario.senha === ""){
+      alert("Preencha todos os campos!")
+      return;
+    }
+
     alert("Login ou senha incorretos! Tente novamente.")
     setUsuario({
       email: "",
@@ -63,9 +68,12 @@ export default function Login() {
         <h1>Login</h1>
 
         <form onSubmit={handleSubmit}>
-            <input type="email" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
-            <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
+          <fieldset>
+            <input type="email" name="email" placeholder="Digite seu email" value={usuario.email.trim()} onChange={handleChange}/>
+            <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha.trim()} onChange={handleChange}/>
             <input type="submit" value="Entrar"/>
+
+          </fieldset>
         </form>
         <p>Ainda não tem uma conta? <Link to={'/cadastro'}>Criar</Link></p>
     </div>

@@ -6,6 +6,7 @@ import Error404 from './routes/Error404/Error404.jsx'
 import Home from './routes/Home/Home.jsx'
 import Login from './routes/Login/Login.jsx'
 import Cadastro from './routes/Cadastro/Cadastro.jsx'
+import Perfil from './routes/Perfil/Perfil.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -19,6 +20,10 @@ const router = createBrowserRouter([{
     {
       path: '/home',
       element: <Home/>
+    },
+    {
+      path: '/perfil',
+      element: <Perfil/>
     },
     {
       path:'/cadastro',
