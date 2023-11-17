@@ -18,36 +18,12 @@
   div{
 
       nav {
-        position: absolute;
         background: var(--navColor);
         box-shadow: var(--shadow);
         height: 80px;
         width: 100%;
 
-        #check {
-            display: none;
-        }
-
-
-        label.checkbtn {
-          line-height: 80px;
-          font-size: 30px;
-          float: right;
-          cursor: pointer;
-          margin-right: 40px;
-          display: none;
-
-          & i {
-            color: var(--white);
-            padding: 5px;
-            border-radius: 10px;
-            transition: .5s ease;
-
-            &:hover {
-                background: var(--green);
-            }
-          }
-        }
+        
 
         label.logo {
           color: var(--white);
@@ -87,6 +63,11 @@
             }
           }
         }
+        
+        .active{
+          background: var(--green);
+          transition: .5s;
+        }
       }
 
 
@@ -96,7 +77,7 @@
   
   section {
     height: 100vh;
-    background: url(/img/background-dark.gif) no-repeat;
+    background: url(/img/background-light.gif) no-repeat;
     background-position: top;
     background-size: cover;
   }

@@ -1,9 +1,10 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
+import "./CabecalhoExemplo.scss"
 
 
 export default function Cabecalho() {
 
-  // const rotaAtual = useLocation();
+  const rotaAtual = useLocation();
 
   const navigate = useNavigate();
 
@@ -18,15 +19,16 @@ export default function Cabecalho() {
   if (sessionStorage.getItem('token-usuario')){
     return (
       <header>
-        <h1>VitaLink</h1>
   
         <nav>
+        <label className="logo">PrevenTech</label>
           <ul>
-            <li><Link to={'/home'}>Home</Link></li>
-            <li><Link to={'/perfil'}>Perfil</Link></li>
+            <li><Link to={'/home'} className={rotaAtual.pathname == "/home" ? "active" : ""}>Home</Link></li>
+            <li><Link to={'/perfil'} className={rotaAtual.pathname == "/perfil" ? "active" : ""}>Perfil</Link></li>
             <li><Link onClick={handleLogout}>Logout</Link></li>
           </ul>
         </nav>
+        {/* <section></section> */}
       </header>
     )
 
