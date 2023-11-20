@@ -11,6 +11,12 @@
       "email": "pessoa2@email.com",
       "senha": "senhapessoa2",
       "id": 2
+    },
+    {
+      "nome": "Pessoa3",
+      "email": "pessoa3@email.com",
+      "senha": "senhapessoa3",
+      "id": 3
     }
   ]
 }
