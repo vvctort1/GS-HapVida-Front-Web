@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import "./Login.scss";
 
 export default function Login() {
 
@@ -64,18 +65,19 @@ export default function Login() {
   }
 
   return (
-    <div>
+    <main className="mainLogin">
+
+      <div className="containerLogin">
         <h1>Login</h1>
 
         <form onSubmit={handleSubmit}>
-          <fieldset>
-            <input type="email" name="email" placeholder="Digite seu email" value={usuario.email.trim()} onChange={handleChange}/>
-            <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha.trim()} onChange={handleChange}/>
-            <input type="submit" value="Entrar"/>
+          <input type="email" name="email" placeholder="Digite seu email" value={usuario.email.trim()} onChange={handleChange}/>
+          <input type="password" name="senha" placeholder="Digite sua senha" value={usuario.senha.trim()} onChange={handleChange}/>
+          <input type="submit" value="Entrar"/>
 
-          </fieldset>
         </form>
         <p>Ainda não tem uma conta? <Link to={'/cadastro'}>Criar</Link></p>
-    </div>
+      </div>
+    </main>
   )
 }

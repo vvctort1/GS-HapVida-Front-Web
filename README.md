@@ -1,8 +1,24 @@
-# React + Vite
+# Global Solution FIAP-HapVida
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Orientações sobre o acesso ao projeto:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para acessar o projeto, é necessário rodar o comando "npm run vitalink", iniciando o json-server e acessando o arquivo json que contém os cadastros de usuário.
+
+Pode acessar utilizando um dos logins já registrados como:
+
+- email: pessoa1@email.com
+- senha: senhapessoa1
+
+ou, realizando o cadastro clicando no link "Criar" na tela de login.
+
+## Observação
+
+Os dados do usuário logado foi colocado numa rota "perfil" que mostra as informações da pessoa.
+
+
+## Integrante:
+
+TURMA 1ESPF
+
+- Victor Kenzo Toma (rm551649)

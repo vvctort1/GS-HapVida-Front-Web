@@ -1,0 +1,49 @@
+
+.mainPerfil{
+    min-height: 64vh;
+    text-align: center;
+    padding: 4%;
+    background-color: #fcf2fa;
+
+    .containerPerfil{
+        background-color: rgb(181, 181, 181);
+        margin: auto 30%;
+        padding: 1%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px black;
+
+        @media (max-width:860px) {
+            margin: 3% 20%;
+            padding: 3%;
+
+        }
+        
+        @media (max-width:480px) {
+            margin: 6% 10%;
+            padding: 3%;
+
+        }
+
+        h1{
+            margin-bottom: 11%;
+        }
+    
+        img{
+            height: 70px;
+            margin-bottom: 10%;
+            border-radius: 6px;
+        }
+    
+        p{
+            margin: 2% 0;
+    
+            span{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+
+
+}

@@ -21,21 +21,22 @@ export default function Cabecalho() {
       <header>
   
         <nav>
-        <label className="logo">PrevenTech</label>
+        <label className="logo">VitaLink</label>
           <ul>
             <li><Link to={'/home'} className={rotaAtual.pathname == "/home" ? "active" : ""}>Home</Link></li>
             <li><Link to={'/perfil'} className={rotaAtual.pathname == "/perfil" ? "active" : ""}>Perfil</Link></li>
             <li><Link onClick={handleLogout}>Logout</Link></li>
           </ul>
         </nav>
-        {/* <section></section> */}
       </header>
     )
 
   } else {
     return(
       <header>
-        <h1>VitaLink</h1>
+        <nav>
+          <label className="logo">VitaLink</label>
+        </nav>
       </header>
     )
   }

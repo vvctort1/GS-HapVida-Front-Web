@@ -1,54 +1,190 @@
-.divHome{
-    height: 70vh;
+.mainHome{
+    height: 200%;
     display: flex;
     width: 100%;
+    background-color: #fcf2fa;
+    box-sizing: content-box;
 
-    .coluna{
-        width: 70%;
+    @media (max-width:980px) {
+        display: block;
+    }
 
-        img{
+    .colunas{
+        width: 100%;
+
+        .coluna1{
             width: 100%;
+    
+            img{
+                width: 100%;
+                height: 78.5%;
+            }
+            
+            .solucao{
+                display: flex;
+                padding: 20px;
+
+                @media (max-width:1160px) {
+                    flex-direction: column;
+                    
+                    h1{
+                        margin-bottom: 3%;
+                    }
+                }
+    
+                h1{
+                    margin-top: 1%;
+                    width: 50%;
+                    font-style: italic;
+                }
+    
+                p{
+                    text-indent: 6%;
+                    text-align: justify;
+                }
+            }
+      
         }
 
-        h1{
-            width: 100%;
+
+        .coluna2{
+            max-height: 80%;
+            
+            .vantagens{
+                background-image:  linear-gradient(to right, rgba(3, 138, 69, 0.6)5%, rgba(14, 92, 52, 0.9));
+                margin: 20px;
+                border-radius: 20px;
+                padding: 3%;
+
+                .cards{
+                    display: flex;
+                    justify-content: space-around;
+        
+                    .card{
+                        background-color:rgba(23, 99, 48, 0.667);
+                        height: 90px;
+                        width: 20%;
+                        margin: 20px;
+                        border-radius: 10px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #fcf2fa;
+                        font-style: italic;
+                        font-size: large;
+                        padding-top: 3%;
+                        text-shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+
+                        @media (max-width:740px) {
+                            font-size: 14px;
+                        }
+
+                        @media (max-width:580px){
+                            width: 40%;
+                            padding-top: 6%;
+                        }
+                    }
+                }
+            }
         }
     }
+
+    
+
+    
 
     aside{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         width: 30%;
-        height: 100%;
+        background-color: lightgrey;
+
+        @media (max-width:980px) {
+            width: 100vw;
+        }
 
         .div1{
-            border: 1px solid black;
+            border-bottom: 2px solid black;
             flex: 1;
             padding: 10%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media (max-width:740px) {
+                flex-direction: row;
+                width: 100vw;
+
+
+                p{
+                    font-size: 13px;
+                    margin-left: 4%;
+                }
+            }
+
+            @media (max-width:980px) {
+                
+                h3{
+                    margin-bottom: 3%;
+                }
+            }
+
+            p{
+                text-align: justify;
+                text-indent: 5%;
+            }
             
         }
         
         .div2{
-            border: 1px solid black;
+            border-bottom: 2px solid black;
             flex: 1;
             padding: 10%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media (max-width:740px) {
+                flex-direction: row;
+                width: 100vw;
+            }
+            
+            @media (max-width:980px) {
+                
+                h3{
+                    margin-bottom: 3%;
+                }
+            }
+
+            p{
+                text-align: justify;
+                text-indent: 5%;
+            }
             
         }
         
         .div3{
-            border: 1px solid black;
             flex: 1;
             padding: 10%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            @media (max-width:740px) {
+                flex-direction: row;
+                width: 100vw;
+            }
+
+            @media (max-width:980px) {
+                
+                h3{
+                    margin-bottom: 3%;
+                }
+            }
+
+            p{
+                text-align: justify;
+                text-indent: 5%;
+            }
 
         }
     }

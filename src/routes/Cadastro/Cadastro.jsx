@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react";
+import "./Cadastro.scss";
 
 export default function Cadastro() {
 
@@ -10,7 +11,6 @@ export default function Cadastro() {
     nome: "",
     email: "",
     senha: "",
-    foto: ""
   });
   
   const handleChange = (e) => {
@@ -43,7 +43,8 @@ export default function Cadastro() {
 
 
   return (
-    <div>
+    <main className="mainCadastro">
+      <div className="containerCadastro">
         <h1>Cadastro</h1>
 
         <form onSubmit={() => handlePost(usuario)}>
@@ -55,6 +56,7 @@ export default function Cadastro() {
         </form>
 
         <p>Já possui conta? <Link to={'/'}>Logar</Link></p>
-    </div>
+      </div>
+    </main>
   )
 }

@@ -1,22 +1,16 @@
 {
   "usuarios": [
     {
-      "email": "adriana@iemail.com",
-      "nome": "Adriana Oliveira",
-      "senha": "123456",
+      "nome": "Pessoa1",
+      "email": "pessoa1@email.com",
+      "senha": "senhapessoa1",
       "id": 1
     },
     {
-      "nome": "Victor",
-      "email": "victor123toma@gmail.com",
-      "senha": "1234566",
+      "nome": "Pessoa2",
+      "email": "pessoa2@email.com",
+      "senha": "senhapessoa2",
       "id": 2
-    },
-    {
-      "nome": "Luninha",
-      "email": "lulu@email.org",
-      "senha": "luluzita",
-      "id": 3
     }
   ]
 }

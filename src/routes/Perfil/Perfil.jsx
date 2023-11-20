@@ -1,17 +1,22 @@
-import { FaEdit as Edit } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
+import "./Perfil.scss";
+import foto from "../../img/profile-photo.webp";
 
 export default function Perfil() {
 
     const dadosUser = JSON.parse(sessionStorage.getItem('data-usuario'))
 
   return (
-    <div className="divPerfil">
+    <main className="mainPerfil">
+
+      <div className="containerPerfil">
         <h1>Perfil</h1>
+        <img src={foto} alt="foto de perfil" />
 
-        <p>Nome: {dadosUser.nome}</p>
-        <p>E-mail: {dadosUser.email}</p><Link><Edit/></Link>
+        <p><span>Nome:</span> {dadosUser.nome}</p>
+        <p><span>E-mail:</span> {dadosUser.email}</p>
+      </div>
 
-    </div>
+    </main>
   )
 }

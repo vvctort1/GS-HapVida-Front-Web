@@ -15,72 +15,69 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  div{
 
-      nav {
-        background: var(--navColor);
-        box-shadow: var(--shadow);
-        height: 80px;
-        width: 100%;
+header{
 
-        
+  nav {
+    background: var(--navColor);
+    box-shadow: var(--shadow);
+    height: 80px;
+    width: 100%;
 
-        label.logo {
-          color: var(--white);
-          font-size: 30px;
-          line-height: 80px;
-          padding: 0 80px;
-          letter-spacing: -1px;
-          font-weight: 800;
-          font-style: italic;
-          transition: .2s ease;
-          text-shadow: 3px 5px 20px #230622aa;
-        }
+    @media (max-width: 740px) {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    label.logo {
+      color: var(--white);
+      font-size: 30px;
+      line-height: 80px;
+      padding: 0 80px;
+      letter-spacing: -1px;
+      font-weight: 800;
+      font-style: italic;
+      transition: .2s ease;
+      text-shadow: 3px 5px 20px #230622aa;
+    }
+    & ul {
+      float: right;
+      margin-right: 80px;
 
-
-        & ul {
-          float: right;
-          margin-right: 80px;
-
-
-
-          & li {
-            display: inline-block;
-            line-height: 80px;
-
-            & a {
-              color: var(--white);
-              font-size: 17px;
-              padding: 7px 13px;
-              border-radius: 13px;
-              text-transform: lowercase;
-
-
-              &.active, &:hover {
-                background: var(--green);
-                transition: .5s;
-              }
-            }
-          }
-        }
-        
-        .active{
-          background: var(--green);
-          transition: .5s;
-        }
+      @media (max-width:740px) {
+        margin-left: 10%;
       }
 
+      & li {
+        display: inline-block;
+        line-height: 80px;
+        & a {
+          color: var(--white);
+          font-size: 17px;
+          padding: 7px 13px;
+          border-radius: 13px;
+          text-transform: lowercase;
 
+          &.active, &:hover {
+            background: var(--green);
+            transition: .5s;
+          }
+        }
+      }
+    }
+    
+    .active{
+      background: var(--green);
+      transition: .5s;
+    }
   }
+}
+
+
   
   
-  
-  section {
-    height: 100vh;
-    background: url(/img/background-light.gif) no-repeat;
-    background-position: top;
-    background-size: cover;
-  }
-  
+
   
  
