@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 
 export default function Error404() {
 
+  document.title = "Erro404"
+
   if (sessionStorage.getItem('token-usuario')){
     return(
       <div className="divMain">

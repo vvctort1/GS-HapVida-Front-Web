@@ -5,7 +5,7 @@ import imagem1 from "../../img/background-light.gif"
 
 export default function Home() {
 
-
+  document.title = "Home"
 
   if (sessionStorage.getItem("token-usuario")){
     return (

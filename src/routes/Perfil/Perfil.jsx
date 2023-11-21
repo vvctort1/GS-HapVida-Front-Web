@@ -4,6 +4,8 @@ import foto from "../../img/profile-photo.webp";
 
 export default function Perfil() {
 
+  document.title = "Perfil"
+
     const dadosUser = JSON.parse(sessionStorage.getItem('data-usuario'))
 
   return (

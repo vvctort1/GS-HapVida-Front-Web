@@ -6,6 +6,8 @@ export default function Cadastro() {
 
   const navigate = useNavigate();
 
+  document.title = "Cadastro"
+
   
   const [usuario,setUsuario] = useState({
     nome: "",

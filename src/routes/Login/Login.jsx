@@ -6,6 +6,8 @@ export default function Login() {
 
   const navigate = useNavigate();
 
+  document.title = "Login"
+
   const [usuario,setUsuario] = useState({
     email: "",
     nome: "",
