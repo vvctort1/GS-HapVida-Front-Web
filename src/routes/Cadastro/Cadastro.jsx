@@ -55,7 +55,7 @@ export default function Cadastro() {
           <input type="submit" value="Cadastrar"/>
         </form>
 
-        <p>Já possui conta? <Link to={'/'}>Logar</Link></p>
+        <p>Já possui conta? <Link to={'/'}>Entre</Link></p>
       </div>
     </main>
   )

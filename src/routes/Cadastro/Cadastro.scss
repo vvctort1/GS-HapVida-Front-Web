@@ -10,6 +10,7 @@
         margin: 2% 35%;
         padding: 3%;
         border-radius: 20px;
+        box-shadow: 2px 2px 10px black;
 
         @media (max-width:960px) {
             margin: 2% 20%;
@@ -56,6 +57,14 @@
 
         p{
             text-align: center;
+
+            a{
+                text-decoration: underline;
+
+                &:any-link{
+                    color: rgb(131, 161, 60);
+                }
+            }
         }
 
     }
